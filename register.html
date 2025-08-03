@@ -1,0 +1,315 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Talent Connect</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="css/slick.css">
+  <link rel="stylesheet" type="text/css" href="css/slick-theme.css">
+  <link rel="stylesheet" type="text/css" href="css/animate.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <header>
+    <!--<div class="top-head d-block d-lg-none">
+        <div class="custom-container"> 
+            <div class="form-inline head-right-area mt-2 my-lg-0">
+                <button class="btn btn-sm btn-blue-outline my-2 my-sm-0 mx-2">Login</button>
+                <button class="btn btn-sm btn-blue my-sm-0">Register</button>
+            </div>
+        </div>
+    </div>-->
+    <div class="navbar-wrapper">
+        <div class="custom-container">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt=""></a>
+                <div class="form-inline head-right-area mr-2 d-block d-lg-none ml-auto">
+                    <button class="btn btn-sm btn-blue-outline my-2 my-sm-0 mx-2">Login</button>
+                    <button class="btn btn-sm btn-blue my-sm-0">Register</button>
+                </div>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+            
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                    <a class="nav-link" href="#">Dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#">Our Offering</a>
+                    </li>
+                </ul>
+                <div class="form-inline head-right-area my-2 my-lg-0 d-none d-lg-block">
+                    <button class="btn btn-blue-outline my-2 my-sm-0 mx-2">Login</button>
+                    <button class="btn btn-blue my-sm-0">Register</button>
+                </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+  </header>
+
+<div class="main-container">
+  <section class="register-wrapper">
+    <div class="custom-container">
+      <h1 class="page-title wow fadeInUp">Create your Company Profile</h1>
+      <div class="section-top-content wow fadeInUp">
+        <h3>Submit your details</h3>
+        <p>The following is required and will only be shared with Talent Map</p>
+      </div>
+      <div class="register-form">
+        <form action="/action_page.php">
+          <div class="row wow fadeInUp">
+            <div class="col-12 col-lg-6">
+              <div class="form-group">
+                <label for="company">Company Name <a href="#" data-toggle="tooltip" title="A name that reflects your business identity, values and offerings."  class="information"><i class="fa fa-info-circle" aria-hidden="true"></i></a></label>
+                <input type="text" class="form-control" placeholder="Enter your Company Name" id="company">
+              </div>
+            </div>
+            <div class="col-12 col-lg-6">
+              <div class="form-group">
+                <label for="company-turnover">Company Turnover <a href="#" data-toggle="tooltip" title="A name that reflects your business identity, values and offerings."  class="information"><i class="fa fa-info-circle" aria-hidden="true"></i></a></label>
+                <input type="text" class="form-control" placeholder="What’s your company Turnover?" id="company-turnover">
+              </div>
+            </div>
+            <div class="col-12 col-lg-6">
+              <div class="form-group">
+                <label for="email">Email Address <a href="#" data-toggle="tooltip" title="A name that reflects your business identity, values and offerings."  class="information"><i class="fa fa-info-circle" aria-hidden="true"></i></a></label>
+                <input type="email" class="form-control" placeholder="Enter your email address" id="email">
+              </div>
+            </div>
+            <div class="col-12 col-lg-6">
+              <div class="form-group">
+                <label for="employee">Numbers of Employee <a href="#" data-toggle="tooltip" title="A name that reflects your business identity, values and offerings."  class="information"><i class="fa fa-info-circle" aria-hidden="true"></i></a></label>
+                <input type="email" class="form-control" placeholder="How many people are working?" id="employee">
+              </div>
+            </div>
+            <div class="col-12 col-lg-6">
+              <div class="form-group">
+                <label for="phone">Phone Number <a href="#" data-toggle="tooltip" title="A name that reflects your business identity, values and offerings."  class="information"><i class="fa fa-info-circle" aria-hidden="true"></i></a></label>
+                <input type="text" class="form-control" placeholder="Enter your phone number" id="phone">
+              </div>
+            </div>
+            <div class="col-12 col-lg-6">
+              <div class="form-group">
+                <label for="address">Company Address <a href="#" data-toggle="tooltip" title="A name that reflects your business identity, values and offerings."  class="information"><i class="fa fa-info-circle" aria-hidden="true"></i></a></label>
+                <input type="text" class="form-control" placeholder="Enter Your Full Address" id="address">
+              </div>
+            </div>
+            <div class="col-12 col-lg-6">
+              <div class="form-group">
+                <label for="registration">MSME Registration No <a href="#" data-toggle="tooltip" title="A name that reflects your business identity, values and offerings."  class="information"><i class="fa fa-info-circle" aria-hidden="true"></i></a></label>
+                <input type="text" class="form-control" placeholder="Enter your MSME Registration Details" id="registration">
+              </div>
+            </div>
+            <div class="col-12 col-lg-6">
+              <div class="form-group">
+                <label for="registration">GST Registration No <a href="#" data-toggle="tooltip" title="A name that reflects your business identity, values and offerings."  class="information"><i class="fa fa-info-circle" aria-hidden="true"></i></a></label>
+                <input type="text" class="form-control" placeholder="Enter your Registration Details" id="registration">
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <div class="custom-divder"></div>
+            </div>
+          </div>
+          <div class="row wow fadeInUp">
+            <div class="col-12">
+              <div class="links">
+                <h4>Links <a href="#" data-toggle="tooltip" title="A name that reflects your business identity, values and offerings."  class="information"><i class="fa fa-info-circle" aria-hidden="true"></i></a></h4>
+                <div class="form-group">
+                  <label for="linkedin-url">LinkedIn URL</label>
+                  <input type="text" class="form-control" placeholder="Link to your LinkedIn URL" id="linkedin-url">
+                </div>
+                <div class="form-group">
+                  <label for="website">Company Website</label>
+                  <input type="text" class="form-control" placeholder="Company domain name" id="website">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <div class="custom-divder"></div>
+            </div>
+          </div>
+          <div class="row wow fadeInUp">
+            <div class="col-12">
+              <div class="form-group additional-information">
+                <label for="information">Company Additional information <a href="#" data-toggle="tooltip" title="A name that reflects your business identity, values and offerings."  class="information"><i class="fa fa-info-circle" aria-hidden="true"></i></a></label>
+                <textarea class="form-control" rows="5" placeholder="About your company & additional business requirement." id="information"></textarea>
+              </div>
+            </div>
+          </div>
+
+          <div class="row wow fadeInUp">
+            <div class="col-12">
+              <div class="form-group registration-document">
+                <div class="row">
+                  <div class="col-12 col-lg-3 col-md-6">
+                    <label class="label">MSME Registration Document</label>
+                  </div>
+                  <div class="col-12 col-lg-3 col-md-6">
+                    <label for="file-upload" class="custom-file-upload">
+                      <span class="icon"><i class="fa fa-paperclip" aria-hidden="true"></i></span> Attach your document jpg/pdf
+                    </label>
+                    <input id="file-upload" type="file" class="custom-file" />
+                  </div>
+                  <div class="col-12 col-lg-3 col-md-6">
+                    <label class="label">Financial Document</label>
+                  </div>
+                  <div class="col-12 col-lg-3 col-md-6">
+                    <label for="file-financial-document" class="custom-file-upload">
+                      <span class="icon"><i class="fa fa-paperclip" aria-hidden="true"></i></span> Attach your document jpg/pdf
+                    </label>
+                    <input id="file-financial-document" type="file" class="custom-file" />
+                  </div>
+                  <div class="col-12 col-lg-3 col-md-6">
+                    <label class="label">GST Registration Document</label>
+                  </div>
+                  <div class="col-12 col-lg-3 col-md-6">
+                    <label for="file-gst" class="custom-file-upload">
+                      <span class="icon"><i class="fa fa-paperclip" aria-hidden="true"></i></span> Attach your document jpg/pdf
+                    </label>
+                    <input id="file-gst" type="file" class="custom-file" />
+                  </div>
+                  <div class="col-12 col-lg-3 col-md-6">
+                    <label class="label">Company Logo</label>
+                  </div>
+                  <div class="col-12 col-lg-3 col-md-6">
+                    <label for="file-company-logo" class="custom-file-upload">
+                      <span class="icon"><i class="fa fa-paperclip" aria-hidden="true"></i></span> Attach your document jpg/pdf
+                    </label>
+                    <input id="file-company-logo" type="file" class="custom-file" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row wow fadeInUp">
+            <div class="col-12">
+              <div class="btn-wrapper text-center">
+                <button type="button" class="btn btn-gray mx-1 mb-1">Cancel</button>
+                <button type="button" class="btn btn-gray mx-1 mb-1">Save</button>
+                <button type="button" class="btn btn-blue mx-1 mb-1" data-toggle="modal" data-target="#myModal">Submit</button>
+              </div>
+            </div>
+          </div>
+          <div class="note wow fadeInUp">By sending the request you can confirm that you accept our <a href="javascript:void(0)">Terms of Service</a> and <a href="javascript:void(0)">Privacy Policy</a></div>
+
+        </form> 
+
+      </div>
+    </div>
+  </section>
+
+
+</div>
+
+<footer>
+  <div class="custom-container">
+      <div class="middle-footer">
+          <div class="row">
+              <div class="col-12">
+                  <div class="footer-logo wow fadeInUp"><a href="#"><img src="images/logo-white.png" alt=""></a></div>
+              </div>
+              <div class="col-12 col-lg-4">
+                  <div class="address wow fadeInUp">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam mollis, justo nec porttitor auctor, erat sapien faucibus lectus, vel tempor dolor augue et lectus.</p>
+                  </div>
+                  <div class="top-footer-right wow fadeInUp">
+                      <div class="social-media-links">
+                          <ul>
+                              <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                              <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                              <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                              <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-12 col-lg-2">
+                  <div class="links wow fadeInUp">
+                      <ul>
+                          <li class="active"><a href="#">About Us</a></li>
+                          <li><a href="#">Careers</a></li>
+                          <li><a href="#">Employer Home</a></li>
+                          <li><a href="#">Sitemap</a></li>
+                          <li><a href="#">Credits</a></li>
+                      </ul>
+                  </div>
+              </div>
+              <div class="col-12 col-lg-2">
+                  <div class="links wow fadeInUp">
+                      <ul>
+                          <li><a href="#">Help Center</a></li>
+                          <li><a href="#">Summons/Notices</a></li>
+                          <li><a href="#">Grievances</a></li>
+                          <li><a href="#">Report issues</a></li>
+                      </ul>
+                  </div>
+              </div>
+              <div class="col-12 col-lg-2">
+                  <div class="links wow fadeInUp">
+                      <ul>
+                          <li><a href="#">Privacy Policy</a></li>
+                          <li><a href="#">Terms & Conditions</a></li>
+                          <li><a href="#">Fraud alert</a></li>
+                          <li><a href="#">Trust & Safety</a></li>
+                      </ul>
+                  </div>
+              </div>
+              <div class="col-12 col-lg-2">
+                  <div class="links copyright wow fadeInUp">
+                      <ul>
+                          <li><a href="mailto:CCdoc123@gmail.com">CCdoc123@gmail.com</a></li>
+                          <li>Copyright © 2024 TalentMap, Inc.</li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+  </div>
+</footer>
+
+  <!-- The Modal -->
+  <div class="modal fade congratulations-wrapper" id="myModal">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+          <div class="congratulations-wrap">
+            <div class="congratulations">
+              <div class="icon"><img src="./images/user-check.png" alt=""></div>
+              <div class="content"><h1>Congratulations</h1>
+                <h3>Your profile is 100% complete!</h3>
+                <p>Thank you for registering with us. We will get back to you within 24 hours.</p>
+              </div> 
+              <div class="blue-outline-btn"><a href="javascript:void(0)">Home</a></div>
+            </div>
+          </div> 
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
+<script src="js/jquery.slim.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/slick.js" type="text/javascript"></script>
+<script src="js/custom.js" type="text/javascript"></script>
+<!-- wow animation -->
+<script src="js/wow.min.js" type="text/javascript"></script>
+</body>
+</html> 

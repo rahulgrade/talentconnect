@@ -1,0 +1,764 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Talent Connect</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="css/slick.css">
+  <link rel="stylesheet" type="text/css" href="css/slick-theme.css">
+  <link rel="stylesheet" type="text/css" href="css/animate.min.css">
+  <link rel="stylesheet" type="text/css" href="css/range-slider.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <header>
+    <div class="navbar-wrapper">
+        <div class="custom-container">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt=""></a>
+                <div class="form-inline head-right-area mr-2 d-block d-lg-none ml-auto">
+                    <button class="btn btn-sm btn-blue-outline my-2 my-sm-0 mx-2">Login</button>
+                    <button class="btn btn-sm btn-blue my-sm-0">Register</button>
+                </div>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+            
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                    <a class="nav-link" href="#">View Active Profile</a>
+                    </li>
+                    <li class="nav-item active">
+                    <a class="nav-link" href="#">Add Profile</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">My Network</a>
+                        </li>
+                </ul>
+                <div class="form-inline head-right-area my-2 my-lg-0 d-none d-lg-block">
+                    <button class="btn btn-blue-outline my-2 my-sm-0 mx-2">Login</button>
+                    <button class="btn btn-blue my-sm-0">Register</button>
+                </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+  </header>
+
+<div class="main-container">
+  <section class="search-page-wrapper">
+    <div class="search-page-wrap">
+        <div class="container-fluid">
+            <div class="top-search-wrapper wow fadeInUp">
+                <div class="top-search-form">
+                    <form>
+                        <div class="d-lg-flex justify-content-center">
+                            <div class="form-group border-right">
+                                <span class="icon"><i class="fa fa-search" aria-hidden="true"></i></span>
+                                <input type="text" class="form-control" placeholder="Job title or keyword" id="title">
+                            </div>
+                            <div class="form-group border-right">
+                                <span class="icon"><i class="fa fa-search" aria-hidden="true"></i></span>
+                                <select class="form-control" id="keywords">
+                                    <option>Keywords</option>
+                                    <option>Laravel</option>
+                                    <option>Codeigniter</option>
+                                    <option>MySql</option>
+                                </select>
+                            </div>
+                            <div class="form-group border-right">
+                                <span class="icon"><i class="fa fa-search" aria-hidden="true"></i></span>
+                                <input type="text" class="form-control" placeholder="Search by  Name" id="search-by-name">
+                            </div>
+                            <div class="form-group location">
+                                <span class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+                                <select class="form-control" id="sel1">
+                                    <option>Delhi, India</option>
+                                    <option>Uttar Pradesh, India</option>
+                                    <option>Haryana</option>
+                                    <option>4</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-blue">Submit</button>
+                                <a href="https://talentknect.com/customer/view-active-profile" class="btn btn-blue">Refresh</a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="popular-positions text-center">Popular :  Python Developer, AI,ML Developer, UI Designer, UX Researcher, Android, Admin</div>
+            </div>
+        </div>
+    </div>
+    <div class="filters-jobs-wrapper">
+        <div class="custom-container">
+            <div class="row">
+                <div class="col-12 col-lg-3">
+                    <div class="jobs-left">
+                        <div class="left-title">Filters</div>
+                        <div class="salary-area">
+                            <div class="left-sub-title">Salary</div>
+                                <div class="salary-nav-tabs">
+                                    <!-- Nav tabs -->
+                                    <ul class="nav nav-tabs">
+                                        <li class="nav-item">
+                                        <a class="nav-link active" data-toggle="tab" href="#home"><span class="icon"><i class="fa fa-usd" aria-hidden="true"></i></span> Hourly</a>
+                                        </li>
+                                        <li class="nav-item">
+                                        <a class="nav-link" data-toggle="tab" href="#menu1"><span class="icon"><i class="fa fa-inr" aria-hidden="true"></i></span> Monthly</a>
+                                        </li>
+                                    </ul>
+
+                                    <!-- Tab panes -->
+                                    <div class="tab-content">
+                                        <div id="home" class="tab-pane active">
+                                        <div class="rangeslider">
+                                            <span class="left-border"></span>
+                                            <input class="min" name="range_1" type="range" min="1" max="100" value="10" />
+                                            <input class="max" name="range_1" type="range" min="1" max="100" value="90" />
+                                            <span class="range_min light left">0 $</span>
+                                            <span class="range_max light right">100 $</span>
+                                            <span class="right-border"></span>
+                                        </div>
+                                        </div>
+                                        <div id="menu1" class="tab-pane fade">
+                                            <div class="rangeslider">
+                                                <span class="left-border"></span>
+                                                <input class="min" name="range_1" type="range" min="1" max="100" value="10" />
+                                                <input class="max" name="range_1" type="range" min="1" max="100" value="90" />
+                                                <span class="range_min light left">0 $</span>
+                                                <span class="range_max light right">100 $</span>
+                                                <span class="right-border"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                        </div>
+                        <div class="availability-area">
+                            <div class="left-sub-title">Availability</div>
+                            <div class="rangeslider">
+                                <span class="left-border"></span>
+                                <input class="min" name="range_1" type="range" min="1" max="100" value="10" />
+                                <input class="max" name="range_1" type="range" min="1" max="100" value="90" />
+                                <span class="range_min light left">0 Days</span>
+                                <span class="range_max light right">90 Days</span>
+                                <span class="right-border"></span>
+                            </div>
+                        </div>
+                        <div class="employment-area">
+                            <div class="left-sub-title">Type of Employment</div>
+                            <form>
+                                <div class="form-group form-check">
+                                    <label class="form-check-label custom-checkbox">
+                                      <input class="form-check-input" type="checkbox" name="remember" checked="checked">Contractual Role
+                                      <span class="checkmark"></span>
+                                    </label>
+                                </div>
+                                <div class="form-group form-check">
+                                    <label class="form-check-label custom-checkbox">
+                                      <input class="form-check-input" type="checkbox" name="remember">Independent Consultant
+                                      <span class="checkmark"></span>
+                                    </label>
+                                </div>
+                                <div class="form-group form-check">
+                                    <label class="form-check-label custom-checkbox">
+                                      <input class="form-check-input" type="checkbox" name="remember">Internship
+                                      <span class="checkmark"></span>
+                                    </label>
+                                </div>
+                                <div class="form-group form-check">
+                                    <label class="form-check-label custom-checkbox">
+                                      <input class="form-check-input" type="checkbox" name="remember">Permanent Payroll 
+                                      <span class="checkmark"></span>
+                                    </label>
+                                </div>
+                                <div class="form-group form-check">
+                                    <label class="form-check-label custom-checkbox">
+                                      <input class="form-check-input" type="checkbox" name="remember">3rd Party Contractual Role 
+                                      <span class="checkmark"></span>
+                                    </label>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="experience-area">
+                            <div class="left-sub-title">Work Experience</div>
+                            <form action="#">
+                                <div class="custom-control custom-radio">
+                                    <input type="radio" class="custom-control-input" id="customRadio" checked="" name="example">
+                                    <label class="custom-control-label" for="customRadio">2 -5 Years</label>
+                                  </div> 
+                                  <div class="custom-control custom-radio">
+                                    <input type="radio" class="custom-control-input" id="customRadio2" name="example">
+                                    <label class="custom-control-label" for="customRadio2">5 -8 Years</label>
+                                  </div> 
+                                  <div class="custom-control custom-radio">
+                                    <input type="radio" class="custom-control-input" id="customRadio3" name="example">
+                                    <label class="custom-control-label" for="customRadio3">8 -12 Years</label>
+                                  </div> 
+                                  <div class="custom-control custom-radio">
+                                    <input type="radio" class="custom-control-input" id="customRadio4" name="example">
+                                    <label class="custom-control-label" for="customRadio4">15+ Years</label>
+                                  </div> 
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-9">
+                    <div class="jobs-wrapper">
+                        <div class="title wow fadeInUp">
+                            <h1>3177 Jobs</h1>
+                            <div class="dropdown">
+                                <button type="button" class="btn btn-outline-secondary dropdown-toggle" data-toggle="dropdown">
+                                    Team / Sub Team
+                                </button>
+                                <div class="dropdown-menu">
+                                  <a class="dropdown-item" href="#">Link 1</a>
+                                  <a class="dropdown-item" href="#">Link 2</a>
+                                  <a class="dropdown-item" href="#">Link 3</a>
+                                </div>
+                            </div> 
+                        </div>
+                        <div class="job-box wow fadeInUp">
+                            <div class="profile-edit-btn">
+                                <a href="javascript:void(0)"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+                                <a href="javascript:void(0)"><i class="fa fa-trash-o" aria-hidden="true"></i></a>
+                            </div>
+                            <div class="profile-wrapper">
+                                <div class="profile-wrap">
+                                    <div class="profile-img"><img src="images/job-profile-01.png" alt=""></div>
+                                    <div class="company-logo"><img src="images/logo.png" alt=""></div>
+                                    <span class="badge badge-outline-secondary"><img src="images/verified-icon.png" alt=""> Verified</span>
+                                </div>
+                                <div class="profile-description">
+                                    <div class="name-wrap">Vibhor Gupta <small>Profile id: 232-54685</small></div>
+                                    <div class="skills-wrapper">
+                                        <div class="data-scientist">
+                                            <h5>Data Scientist</h5>
+                                            <ul class="data-list">
+                                                <li><span><img src="images/year-icon.png" alt=""></span> 16 Years</li>
+                                                <li><span><img src="images/location-icon.png" alt=""></span> New Delhi, India</li>
+                                            </ul>
+                                        </div>
+                                        <div class="more-data-scientist">
+                                            <ul class="data-list">
+                                                <li><span><img src="images/phone-icon.png" alt=""></span> +91 9954465569</li>
+                                                <li><span><img src="images/email-icon.png" alt=""></span> hr@talentconnect.com</li>
+                                                <li><span><img src="images/resume-icon.png" alt=""></span> Resume <span class="download-icon"><img src="images/download-icon.png" alt=""></span></li>
+                                            </ul>
+                                        </div>
+                                        <div class="view-profile">
+                                            <div class="blue-btn"><a href="javascript:void(0)" type="button" data-toggle="modal" data-target="#viewProfilel">View Profile</a></div>
+                                            <ul class="data-list">
+                                                <li class="text-green"><span><img src="images/calendar-icon.png" alt=""></span> <a href="javascript:void(0)" type="button" data-toggle="modal" data-target="#immediatelyAvailable">Immediately Available</a></li>
+                                                <li class="rate"><span><img src="images/wallet-icon.png" alt=""></span> $40 @Hour</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="key-skills"><strong>Key Skills:</strong> SAS, R, Python, Tableau, Power BI, AWS, AI, GenAI, , forecasting, predictive, machine learning, deep learning(RNN, CNN), optimization, and big data analytics.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="job-box wow fadeInUp">
+                            <div class="profile-edit-btn">
+                                <a href="javascript:void(0)"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+                                <a href="javascript:void(0)"><i class="fa fa-trash-o" aria-hidden="true"></i></a>
+                            </div>
+                            <div class="profile-wrapper">
+                                <div class="profile-wrap">
+                                    <div class="profile-img"><img src="images/job-profile-01.png" alt=""></div>
+                                    <div class="company-logo"><img src="images/logo.png" alt=""></div>
+                                    <span class="badge badge-outline-secondary"><img src="images/verified-icon.png" alt=""> Verified</span>
+                                </div>
+                                <div class="profile-description">
+                                    <div class="name-wrap">Vibhor Gupta <small>Profile id: 232-54685</small></div>
+                                    <div class="skills-wrapper">
+                                        <div class="data-scientist">
+                                            <h5>Data Scientist</h5>
+                                            <ul class="data-list">
+                                                <li><span><img src="images/year-icon.png" alt=""></span> 16 Years</li>
+                                                <li><span><img src="images/location-icon.png" alt=""></span> New Delhi, India</li>
+                                            </ul>
+                                        </div>
+                                        <div class="more-data-scientist">
+                                            <ul class="data-list">
+                                                <li><span><img src="images/phone-icon.png" alt=""></span> +91 9954465569</li>
+                                                <li><span><img src="images/email-icon.png" alt=""></span> hr@talentconnect.com</li>
+                                                <li><span><img src="images/resume-icon.png" alt=""></span> Resume <span class="download-icon"><img src="images/download-icon.png" alt=""></span></li>
+                                            </ul>
+                                        </div>
+                                        <div class="view-profile">
+                                            <div class="blue-btn"><a href="javascript:void(0)" type="button" data-toggle="modal" data-target="#viewProfilel">View Profile</a></div>
+                                            <ul class="data-list">
+                                                <li class="text-green"><span><img src="images/calendar-icon.png" alt=""></span> Immediately Available</li>
+                                                <li class="rate"><span><img src="images/wallet-icon.png" alt=""></span> $40 @Hour</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="key-skills"><strong>Key Skills:</strong> SAS, R, Python, Tableau, Power BI, AWS, AI, GenAI, , forecasting, predictive, machine learning, deep learning(RNN, CNN), optimization, and big data analytics.</div>
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="job-box wow fadeInUp">
+                            <div class="profile-edit-btn">
+                                <a href="javascript:void(0)"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+                                <a href="javascript:void(0)"><i class="fa fa-trash-o" aria-hidden="true"></i></a>
+                            </div>
+                            <div class="profile-wrapper">
+                                <div class="profile-wrap">
+                                    <div class="profile-img"><img src="images/job-profile-01.png" alt=""></div>
+                                    <div class="company-logo"><img src="images/logo.png" alt=""></div>
+                                    <span class="badge badge-outline-secondary"><img src="images/verified-icon.png" alt=""> Verified</span>
+                                </div>
+                                <div class="profile-description">
+                                    <div class="name-wrap">Vibhor Gupta <small>Profile id: 232-54685</small></div>
+                                    <div class="skills-wrapper">
+                                        <div class="data-scientist">
+                                            <h5>Data Scientist</h5>
+                                            <ul class="data-list">
+                                                <li><span><img src="images/year-icon.png" alt=""></span> 16 Years</li>
+                                                <li><span><img src="images/location-icon.png" alt=""></span> New Delhi, India</li>
+                                            </ul>
+                                        </div>
+                                        <div class="more-data-scientist">
+                                            <ul class="data-list">
+                                                <li><span><img src="images/phone-icon.png" alt=""></span> +91 9954465569</li>
+                                                <li><span><img src="images/email-icon.png" alt=""></span> hr@talentconnect.com</li>
+                                                <li><span><img src="images/resume-icon.png" alt=""></span> Resume <span class="download-icon"><img src="images/download-icon.png" alt=""></span></li>
+                                            </ul>
+                                        </div>
+                                        <div class="view-profile">
+                                            <div class="blue-btn"><a href="javascript:void(0)" type="button" data-toggle="modal" data-target="#viewProfilel">View Profile</a></div>
+                                            <ul class="data-list">
+                                                <li class="text-green"><span><img src="images/calendar-icon.png" alt=""></span> Immediately Available</li>
+                                                <li class="rate"><span><img src="images/wallet-icon.png" alt=""></span> $40 @Hour</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="key-skills"><strong>Key Skills:</strong> SAS, R, Python, Tableau, Power BI, AWS, AI, GenAI, , forecasting, predictive, machine learning, deep learning(RNN, CNN), optimization, and big data analytics.</div>
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="job-box wow fadeInUp">
+                            <div class="profile-edit-btn">
+                                <a href="javascript:void(0)"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+                                <a href="javascript:void(0)"><i class="fa fa-trash-o" aria-hidden="true"></i></a>
+                            </div>
+                            <div class="profile-wrapper">
+                                <div class="profile-wrap">
+                                    <div class="profile-img"><img src="images/job-profile-01.png" alt=""></div>
+                                    <div class="company-logo"><img src="images/logo.png" alt=""></div>
+                                    <span class="badge badge-outline-secondary"><img src="images/verified-icon.png" alt=""> Verified</span>
+                                </div>
+                                <div class="profile-description">
+                                    <div class="name-wrap">Vibhor Gupta <small>Profile id: 232-54685</small></div>
+                                    <div class="skills-wrapper">
+                                        <div class="data-scientist">
+                                            <h5>Data Scientist</h5>
+                                            <ul class="data-list">
+                                                <li><span><img src="images/year-icon.png" alt=""></span> 16 Years</li>
+                                                <li><span><img src="images/location-icon.png" alt=""></span> New Delhi, India</li>
+                                            </ul>
+                                        </div>
+                                        <div class="more-data-scientist">
+                                            <ul class="data-list">
+                                                <li><span><img src="images/phone-icon.png" alt=""></span> +91 9954465569</li>
+                                                <li><span><img src="images/email-icon.png" alt=""></span> hr@talentconnect.com</li>
+                                                <li><span><img src="images/resume-icon.png" alt=""></span> Resume <span class="download-icon"><img src="images/download-icon.png" alt=""></span></li>
+                                            </ul>
+                                        </div>
+                                        <div class="view-profile">
+                                            <div class="blue-btn"><a href="javascript:void(0)" type="button" data-toggle="modal" data-target="#viewProfilel">View Profile</a></div>
+                                            <ul class="data-list">
+                                                <li class="text-green"><span><img src="images/calendar-icon.png" alt=""></span> Immediately Available</li>
+                                                <li class="rate"><span><img src="images/wallet-icon.png" alt=""></span> $40 @Hour</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="key-skills"><strong>Key Skills:</strong> SAS, R, Python, Tableau, Power BI, AWS, AI, GenAI, , forecasting, predictive, machine learning, deep learning(RNN, CNN), optimization, and big data analytics.</div>
+                                </div>
+                            </div>
+                        </div>                       
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </section>
+
+
+</div>
+
+<footer>
+  <div class="custom-container">
+      <div class="middle-footer">
+          <div class="row">
+              <div class="col-12">
+                  <div class="footer-logo wow fadeInUp"><a href="#"><img src="images/logo-white.png" alt=""></a></div>
+              </div>
+              <div class="col-12 col-lg-4">
+                  <div class="address wow fadeInUp">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam mollis, justo nec porttitor auctor, erat sapien faucibus lectus, vel tempor dolor augue et lectus.</p>
+                  </div>
+                  <div class="top-footer-right wow fadeInUp">
+                      <div class="social-media-links">
+                          <ul>
+                              <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                              <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                              <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                              <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-12 col-lg-2">
+                  <div class="links wow fadeInUp">
+                      <ul>
+                          <li class="active"><a href="#">About Us</a></li>
+                          <li><a href="#">Careers</a></li>
+                          <li><a href="#">Employer Home</a></li>
+                          <li><a href="#">Sitemap</a></li>
+                          <li><a href="#">Credits</a></li>
+                      </ul>
+                  </div>
+              </div>
+              <div class="col-12 col-lg-2">
+                  <div class="links wow fadeInUp">
+                      <ul>
+                          <li><a href="#">Help Center</a></li>
+                          <li><a href="#">Summons/Notices</a></li>
+                          <li><a href="#">Grievances</a></li>
+                          <li><a href="#">Report issues</a></li>
+                      </ul>
+                  </div>
+              </div>
+              <div class="col-12 col-lg-2">
+                  <div class="links wow fadeInUp">
+                      <ul>
+                          <li><a href="#">Privacy Policy</a></li>
+                          <li><a href="#">Terms & Conditions</a></li>
+                          <li><a href="#">Fraud alert</a></li>
+                          <li><a href="#">Trust & Safety</a></li>
+                      </ul>
+                  </div>
+              </div>
+              <div class="col-12 col-lg-2">
+                  <div class="links copyright wow fadeInUp">
+                      <ul>
+                          <li><a href="mailto:CCdoc123@gmail.com">CCdoc123@gmail.com</a></li>
+                          <li>Copyright © 2024 TalentMap, Inc.</li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+  </div>
+</footer>
+
+    <!-- The Modal -->
+    <div class="modal fade view-profile-wrapper" id="viewProfilel">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+        <div class="modal-content">
+            
+            <!-- Modal Header -->
+            <div class="modal-header">
+                <div class="view-profile-logo"><a href="index.html"><img src="images/logo.png" alt=""></a></div>
+                <div class="ml-lg-auto view-profile-right">
+                    <button type="button" class="close custom-close" data-dismiss="modal"><i class="fa fa-times" aria-hidden="true"></i></button>
+                    <div class="view-head-right">
+                        <span class="blue-btn"><a href="javascript:void(0)">Download</a></span>
+                        <span class="gray-btn"><a href="javascript:void(0)"><i class="fa fa-heart-o" aria-hidden="true"></i></a></span>
+                        <span class="gray-btn"><a href="javascript:void(0)"><i class="fa fa-bookmark-o" aria-hidden="true"></i></a></span>
+                        <span class="blue-btn"><a href="javascript:void(0)"><i class="fa fa-user-plus" aria-hidden="true"></i> Contact</a></span>
+                        <span class="blue-outline-btn"><a href="javascript:void(0)"><i class="fa fa-lock" aria-hidden="true"></i> Send Message</a></span>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Modal body -->
+            <div class="modal-body">
+            <div class="view-profile-wrap">
+                <div class="profile-left">
+                    <div class="profile-img"><img src="images/job-profile-01.png" alt=""></div>
+                    <div class="profile-content">
+                        <h1>Vibhor Gupta</h1>
+                        <h6>data Scientist@Global Analytics Operation</h6>
+                        <div class="content">
+                            <h5>Experience</h5>
+                            <p>16+ years in Data Science and GenAI</p>
+                        </div>
+                        <div class="content">
+                            <h5>education</h5>
+                            <p>M.A. - Applied Operation Research, Delhi University 2004-2006</p>
+                        </div>
+                        <div class="content">
+                            <h5>Certificate</h5>
+                            <p>ISB, Executive Education: Leadership with AI 2023</p>
+                        </div>
+                        <div class="content">
+                            <h5>E-MAIL</h5>
+                            <p><a href="mailto:hr@talenconnect.com">hr@talenconnect.com</a></p>
+                        </div>
+                        <div class="content">
+                            <h5>Contact</h5>
+                            <p><a href="tel:9954465569">9954465569</a></p>
+                        </div>
+                        <div class="content">
+                            <h5>Location</h5>
+                            <p>Dwarka, New Delhi</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="profile-right">
+                    <div class="availability text-right">Availability: <span class="text-green">Immediately</span></div>
+                    <div class="professional-summary">
+                        <h5>Professional Summary</h5>
+                        <p>With over 17 years of experience in data analytics and operation across multiple domains - Logistic, Software Products, Medical Equipment, Insurance, Public Finance,
+                            Telecom and IT. Leading a team of over 200+ data scientist and analysts who are
+                            responsible for AI/ML Solution development and implementation, Analytical Product Development, Digital Analytics Solution Designing, Market Research</p>
+                    </div>
+                    <div class="key-skills">
+                        <h5>Key Skills</h5>
+                        <ul class="custom-list">
+                            <li>Sas</li>
+                            <li>Python</li>
+                            <li>Tableau</li>
+                            <li>Power BI</li>
+                            <li>AWS</li>
+                            <li>R</li>
+                            <li>Gen AI</li>
+                            <li>Forecasting</li>
+                            <li>Predictive</li>
+                            <li>Machine Learning</li>
+                            <li>Deep Learning (RNN, CNN)</li>
+                            <li>Optimization</li>
+                            <li>Big Data Analytics</li>
+                        </ul>
+                    </div>
+                    <div class="key-project">
+                        <h5>Key Project</h5>
+                        <ul class="custom-list">
+                            <li><div class="text-blue">Project 1 : Operation Optimization</div>
+                                Reporting to Global Head of Operation and directly responsible for managing multiple practices – advance analytics, GenAI, Digital Marketing & Market Research w ith over
+                                200+ data scientist, analyst present across global centers(India, Chile, US, Canada) generating revenue of $22M. Driving strategic initiative of product design- accelerator development, P&L Optimization, Growth Team, Talent Management & Planning help
+                                company to improve P&L by ~18% .</li>
+                            <li><div class="text-blue">Project 2 : Analytics Delivery</div>
+                                Responsible for managing multiple clients in Logistic, Simulation Software and IT product space
+                                with 50+ team members who are designing solution in the area of customer analytics solutions, simulation, optimization,
+                                product recommendation engine etc. all the solutions helped our client bringing top line growth and improve their contribution
+                                margin. In 3 years these clients portfolio become $6Mn from $3Mn.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div> 
+            </div>
+            
+        </div>
+        </div>
+    </div>
+
+    <!-- Immediately Available Modal -->
+    <div class="modal fade immediately-available-wrapper" id="immediatelyAvailable">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+            <button type="button" class="close custom-close" data-dismiss="modal">&times;</button>
+
+            <!-- Modal body -->
+            <div class="modal-body">
+                <div class="immediately-available-wrap">
+                    <div class="billablity-section">
+                        <h3>Billablity</h3>
+                        <div class="billablity-btns">
+                            <span class="gray-outline-btn"><a href="javascript:void(0)">Immediately Available</a></span>
+                            <span class="blue-btn"><a href="javascript:void(0)">Billable</a></span>
+                        </div>
+                        <div class="start-end-date form-inline">
+                            <div class="row">
+                                <div class="col-12 col-lg-6 col-xl-5">
+                                    <label for="start-date">Start Date</label>
+                                    <input type="date" class="form-control" id="start-date" placeholder="01/01/2025" name="form-control">
+                                </div>
+                                <div class="col-12 col-lg-6 col-xl-5">
+                                    <label for="end-date">End Date</label>
+                                    <input type="date" class="form-control" id="end-date" placeholder="01/01/2025" name="end-date">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="do-you-need">
+                            <h6>Do you need reminder when billablity period ending?</h6>
+                            <div class="form-check-inline">
+                            <label class="form-check-label" for="radio1">
+                                <input type="radio" class="form-check-input" id="radio1" name="optradio" value="option1">No
+                            </label>
+                            </div>
+                            <div class="form-check-inline">
+                            <label class="form-check-label" for="radio2">
+                                <input type="radio" class="form-check-input" id="radio2" name="optradio" value="option2" checked>Yes
+                            </label>
+                            </div>
+                        </div>
+                        <div class="daily-weekly-section">
+                            <div class="row">
+                                <div class="col-12 col-md-12 col-lg-3 border-right">
+                                    <ul class="nav nav-pills" role="tablist">
+                                        <li class="nav-item">
+                                            <a class="nav-link" data-toggle="pill" href="#daily">
+                                                <i class="fa fa-square-o" aria-hidden="true"></i> Daily
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                          <a class="nav-link active" data-toggle="pill" href="#weekly">
+                                            <i class="fa fa-check-square" aria-hidden="true"></i> Weekly
+                                          </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" data-toggle="pill" href="#monthly">
+                                                <i class="fa fa-square-o" aria-hidden="true"></i> Monthly
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-12 col-md-12 col-lg-9">
+                                    <!-- Tab panes -->
+                                    <div class="tab-content">
+                                        <div id="daily" class="tab-pane fade">
+                                        <h3>HOME</h3>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                        </div>
+                                        <div id="weekly" class="tab-pane active">
+                                            <div class="weekly-content">
+                                                <div class="reminder form-inline">
+                                                    Reminder every <input type="test" class="form-control" placeholder="1"> week(s) on:
+                                                </div>
+                                                <div class="week-days">
+                                                    <div class="row">
+                                                        <div class="col-6 col-sm-4">
+                                                            <div class="form-check">
+                                                                <label class="form-check-label" for="monday">
+                                                                  <input type="checkbox" class="form-check-input" id="monday" name="option1" value="something" checked>Monday
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6 col-sm-4">
+                                                            <div class="form-check">
+                                                                <label class="form-check-label" for="tuesday">
+                                                                  <input type="checkbox" class="form-check-input" id="tuesday" name="option2" value="something">Tuesday
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6 col-sm-4">
+                                                            <div class="form-check">
+                                                                <label class="form-check-label" for="wednesday">
+                                                                  <input type="checkbox" class="form-check-input" id="wednesday" name="option3" value="something">Wednesday
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6 col-sm-4">
+                                                            <div class="form-check">
+                                                                <label class="form-check-label" for="thursday">
+                                                                  <input type="checkbox" class="form-check-input" id="thursday" name="option4" value="something">Thursday
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6 col-sm-4">
+                                                            <div class="form-check">
+                                                                <label class="form-check-label" for="friday">
+                                                                  <input type="checkbox" class="form-check-input" id="friday" name="option5" value="something">Friday
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6 col-sm-4">
+                                                            <div class="form-check">
+                                                                <label class="form-check-label" for="saturday">
+                                                                  <input type="checkbox" class="form-check-input" id="saturday" name="option6" value="something">Saturday
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6 col-sm-4">
+                                                            <div class="form-check">
+                                                                <label class="form-check-label" for="sunday">
+                                                                  <input type="checkbox" class="form-check-input" id="sunday" name="option6" value="something">Sunday
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="monthly" class="tab-pane fade">
+                                        <h3>Menu 2</h3>
+                                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="range-section">
+                            <h6>Range of recurrence</h6>
+                            <div class="start-end-range form-inline">
+                                <label for="start-date-range">Start</label>
+                                <select class="form-control" id="start-date-range">
+                                    <option>01/01/2025</option>
+                                    <option>01/02/2025</option>
+                                    <option>01/03/2025</option>
+                                    <option>01/04/2025</option>
+                                </select>
+                                <label for="end-date-range">End by:</label>
+                                <select class="form-control" id="end-date-range">
+                                    <option>01/06/2025</option>
+                                    <option>01/07/2025</option>
+                                    <option>01/08/2025</option>
+                                    <option>01/09/2025</option>
+                                </select>
+                            </div>
+                            <div class="range-of">
+                                <div class="form-check">
+                                    <label class="form-check-label" for="end-after">
+                                      <input type="checkbox" class="form-check-input" id="end-after" name="option1" value="End after" checked>End after: <input type="text" placeholder="25"> occurrences
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <label class="form-check-label" for="no-end-date">
+                                      <input type="checkbox" class="form-check-input" id="no-end-date" name="option2" value="No end date">No end date
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="reminder-section">
+                                <div class="form-group">
+                                    <label for="comment">Write your reminder message</label>
+                                    <textarea class="form-control" rows="1" id="comment" name="text" placeholder="Recipients"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="immediately-btns">
+                            <button type="button" class="btn btn-outline-gray">OK</button>
+                            <button type="button" class="btn btn-outline-gray">Cancel</button>
+                            <button type="button" class="btn btn-outline-gray">Remove Recurrence</button>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+            
+            </div>
+        </div>
+    </div>
+<script src="js/jquery.slim.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/slick.js" type="text/javascript"></script>
+<script src="js/custom.js" type="text/javascript"></script>
+<!-- wow animation -->
+<script src="js/wow.min.js" type="text/javascript"></script>
+
+<script src="js/range-slider.js" type="text/javascript"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+</body>
+</html> 

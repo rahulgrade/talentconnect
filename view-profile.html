@@ -1,0 +1,441 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Talent Connect</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="css/slick.css">
+  <link rel="stylesheet" type="text/css" href="css/slick-theme.css">
+  <link rel="stylesheet" type="text/css" href="css/animate.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <header>
+    <!--<div class="top-head d-block d-lg-none">
+        <div class="custom-container"> 
+            <div class="form-inline head-right-area mt-2 my-lg-0">
+                <button class="btn btn-sm btn-blue-outline my-2 my-sm-0 mx-2">Login</button>
+                <button class="btn btn-sm btn-blue my-sm-0">Register</button>
+            </div>
+        </div>
+    </div>-->
+    <div class="navbar-wrapper">
+        <div class="custom-container">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt=""></a>
+                <div class="form-inline head-right-area notification-wrapper mr-2 d-block d-lg-none ml-auto">
+                  <div class="dropdown notification my-sm-0 mx-2">
+                    <button type="button" class="btn dropdown-toggle" data-toggle="dropdown"><i class="fa fa-bell" aria-hidden="true"></i> <span class="badge"><i class="fa fa-circle" aria-hidden="true"></i></span></button>
+                    <div class="dropdown-menu dropdown-menu-right notifications-popup">
+                      <div class="notifications-head">
+                        <span class="close-btn" id="notification-close"><i class="fa fa-times" aria-hidden="true"></i></span>
+                        <h3>Notifications</h3>
+                        <div class="noti">
+                          <ul>
+                            <li class="active"><a href="javascript:void(0)"><span class="text">All</span> <span class="count">1</span></a></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="notifications-body">
+                        <div class="notifications">
+                          <div class="notification">
+                            <div class="brand-img"><img src="images/brand-logo-04.jpg" alt="" ></div>
+                            <div class="content"><strong>ZS</strong> wants to connect with you.</div>
+                            <div class="day-ago">1 day ago</div>
+                          </div>
+                          <div class="notification-btns">
+                            <span class="gray-btn-01"><a href="javascript:void(0)">Accept</a></span>
+                            <span class="gray-outline-btn"><a href="javascript:void(0)">Decline</a></span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="notifications-footer text-right">
+                        <div class="blue-btn"><a href="javascript:void(0)">View all notifications</a></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="dropdown mailing my-2 my-sm-0">
+                    <button type="button" class="btn dropdown-toggle" data-toggle="dropdown"><i class="fa fa-envelope" aria-hidden="true"></i> <span class="badge"><i class="fa fa-circle" aria-hidden="true"></i></span></button>
+                    <div class="dropdown-menu dropdown-menu-right">
+                      <a class="dropdown-item" href="#">Link 1</a>
+                      <a class="dropdown-item" href="#">Link 2</a>
+                      <a class="dropdown-item" href="#">Link 3</a>
+                    </div>
+                  </div>
+                  <div class="dropdown profile-noti my-sm-0">
+                    <button type="button" class="btn btn-outline-gray dropdown-toggle" data-toggle="dropdown"><span class="sortname">GI</span> <span class="author-name">Global India</span><span class="badge"><i class="fa fa-circle" aria-hidden="true"></i></span></button>
+                    <div class="dropdown-menu dropdown-menu-right">
+                      <a class="dropdown-item" href="#">Link 1</a>
+                      <a class="dropdown-item" href="#">Link 2</a>
+                      <a class="dropdown-item" href="#">Link 3</a>
+                    </div>
+                  </div>
+                </div>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+            
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                    <a class="nav-link" href="#">View Active Profile</a>
+                    </li>
+                    <li class="nav-item active">
+                    <a class="nav-link" href="#">Add Profile</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">My Network</a>
+                        </li>
+                </ul>
+                <div class="head-right-area notification-wrapper my-2 my-lg-0 d-none d-lg-block">
+                  <div class="dropdown notification my-2 my-sm-0 mx-2">
+                    <button type="button" class="btn dropdown-toggle" data-toggle="dropdown"><i class="fa fa-bell" aria-hidden="true"></i> <span class="badge"><i class="fa fa-circle" aria-hidden="true"></i></span></button>
+                    <div class="dropdown-menu dropdown-menu-right notifications-popup">
+                      <div class="notifications-head">
+                        <span class="close-btn" id="notification-close"><i class="fa fa-times" aria-hidden="true"></i></span>
+                        <h3>Notifications</h3>
+                        <div class="noti">
+                          <ul>
+                            <li class="active"><a href="javascript:void(0)"><span class="text">All</span> <span class="count">1</span></a></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="notifications-body">
+                        <div class="notifications">
+                          <div class="notification">
+                            <div class="brand-img"><img src="images/brand-logo-04.jpg" alt="" ></div>
+                            <div class="content"><strong>ZS</strong> wants to connect with you.</div>
+                            <div class="day-ago">1 day ago</div>
+                          </div>
+                          <div class="notification-btns">
+                            <span class="gray-btn-01"><a href="javascript:void(0)">Accept</a></span>
+                            <span class="gray-outline-btn"><a href="javascript:void(0)">Decline</a></span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="notifications-footer text-right">
+                        <div class="blue-btn"><a href="javascript:void(0)">View all notifications</a></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="dropdown mailing my-2 my-sm-0 mx-2">
+                    <button type="button" class="btn dropdown-toggle" data-toggle="dropdown"><i class="fa fa-envelope" aria-hidden="true"></i> <span class="badge"><i class="fa fa-circle" aria-hidden="true"></i></span></button>
+                    <div class="dropdown-menu dropdown-menu-right">
+                      <a class="dropdown-item" href="#">Link 1</a>
+                      <a class="dropdown-item" href="#">Link 2</a>
+                      <a class="dropdown-item" href="#">Link 3</a>
+                    </div>
+                  </div>
+                  <div class="dropdown profile-noti my-2 my-sm-0 mx-2">
+                    <button type="button" class="btn btn-outline-gray dropdown-toggle" data-toggle="dropdown"><span class="sortname">GI</span> <span class="author-name">Global India</span><span class="badge"><i class="fa fa-circle" aria-hidden="true"></i></span></button>
+                    <div class="dropdown-menu dropdown-menu-right">
+                      <a class="dropdown-item" href="#">Link 1</a>
+                      <a class="dropdown-item" href="#">Link 2</a>
+                      <a class="dropdown-item" href="#">Link 3</a>
+                    </div>
+                  </div>
+                </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+  </header>
+
+<div class="main-container">
+  <section class="register-wrapper">
+    <div class="custom-container">
+      <h1 class="page-title wow fadeInUp">Add/Create Candidate Profile</h1>
+      <div class="section-top-content wow fadeInUp">
+        <h3>Submit your details <span class="blue-btn import-btn float-right"><a href="javascript:void(0)"><i class="fa fa-download" aria-hidden="true"></i> Import</a></span></h3>
+        <p>The following is required and will only be shared with Talent Connect</p>
+      </div>
+      <div class="register-form">
+        <form action="/action_page.php">
+          <div class="row wow fadeInUp">
+            <div class="col-12 col-lg-6">
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" placeholder="Vibhor Gupta" id="name">
+              </div>
+            </div>
+            <div class="col-12 col-lg-6">
+              <div class="form-group">
+                <label for="job-title">Current Job Title</label>
+                <input type="text" class="form-control" placeholder="Data Scientist" id="job-title">
+              </div>
+            </div>
+            <div class="col-12 col-lg-6">
+              <div class="form-group">
+                <label for="professional-summary">Professional Summary</label>
+                <input type="text" class="form-control" placeholder="Enter your detail here" id="professional-summary">
+              </div>
+            </div>
+            <div class="col-12 col-lg-6">
+              <div class="form-group">
+                <label for="skills">Key Skills</label>
+                <div class="custom-input" class="btn btn-primary" data-toggle="modal" data-target="#keySkills">Enter your detail here</div>
+                <!--<input type="text" class="form-control" placeholder="Enter your detail here" id="skills">-->
+              </div>
+            </div>
+            <div class="col-12 col-lg-6">
+              <div class="form-group">
+                <label for="experience">Experience</label>
+                <input type="text" class="form-control" placeholder="Enter your detail here" id="experience">
+              </div>
+            </div>
+            <div class="col-12 col-lg-6">
+              <div class="form-group">
+                <label for="charge">Charge Rate</label>
+                <div class="custom-input" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Enter your detail here</div>
+                <!--<input type="text" class="form-control" placeholder="Enter your detail here" id="charge">-->
+              </div>
+            </div>
+            <div class="col-12 col-lg-6">
+              <div class="form-group">
+                <label for="education">Education</label>
+                <input type="text" class="form-control" placeholder="Enter your detail here" id="education">
+              </div>
+            </div>
+            <div class="col-12 col-lg-6">
+              <div class="form-group">
+                <label for="projects">Projects</label>
+                <input type="text" class="form-control" placeholder="Enter your detail here" id="projects">
+              </div>
+            </div>
+            <div class="col-12 col-lg-6">
+              <div class="form-group">
+                <label for="employment-type">Employment Type</label>
+                <input type="text" class="form-control" placeholder="Enter your detail here" id="employment-type">
+              </div>
+            </div>
+            <div class="col-12 col-lg-6">
+              <div class="form-group">
+                <label for="availability">Availability</label>
+                <input type="text" class="form-control" placeholder="Enter your detail here" id="availability">
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <div class="custom-divder"></div>
+            </div>
+          </div>
+          <div class="row wow fadeInUp">
+            <div class="col-12">
+              <div class="links">
+                <h4>Links</h4>
+                <div class="form-group">
+                  <label for="linkedin-id">LinkedIn Account ID</label>
+                  <input type="text" class="form-control" placeholder="Link your LinkedIn URL" id="linkedin-id">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row wow fadeInUp">
+            <div class="col-12">
+              <div class="form-group registration-document profile-document">
+                <div class="row justify-content-center">
+                  <div class="col-12 col-lg-4 col-md-6 col-xl-3">
+                    <label for="file-upload" class="custom-file-upload">
+                      <span class="icon"><i class="fa fa-paperclip" aria-hidden="true"></i></span> Photo Upload
+                    </label>
+                    <input id="file-upload" type="file" class="custom-file" />
+                    <div class="note font-italic text-danger">Please choose Png, Jpg, Jpeg</div>
+                  </div>
+                  <div class="col-12 col-lg-4 col-md-6 col-xl-3">
+                    <label for="file-financial-document" class="custom-file-upload">
+                      <span class="icon"><i class="fa fa-paperclip" aria-hidden="true"></i></span> Attach you Profile or Resume
+                    </label>
+                    <input id="file-financial-document" type="file" class="custom-file" />
+                    <div class="note font-italic text-danger">Please choose doc, docs, docx</div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row wow fadeInUp">
+            <div class="col-12">
+              <div class="btn-wrapper text-center">
+                <button type="button" class="btn btn-gray mx-1 mb-1">Cancel</button>
+                <button type="button" class="btn btn-gray mx-1 mb-1">Save</button>
+                <button type="button" class="btn btn-blue mx-1 mb-1" data-toggle="modal" data-target="#myModal">Submit</button>
+              </div>
+            </div>
+          </div>
+          <div class="note wow fadeInUp">By sending the request you can confirm that you accept our <a href="javascript:void(0)">Terms of Service</a> and <a href="javascript:void(0)">Privacy Policy</a></div>
+
+        </form> 
+
+      </div>
+    </div>
+  </section>
+
+
+</div>
+
+<footer>
+  <div class="custom-container">
+      <div class="middle-footer">
+          <div class="row">
+              <div class="col-12">
+                  <div class="footer-logo wow fadeInUp"><a href="#"><img src="images/logo-white.png" alt=""></a></div>
+              </div>
+              <div class="col-12 col-lg-4">
+                  <div class="address wow fadeInUp">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam mollis, justo nec porttitor auctor, erat sapien faucibus lectus, vel tempor dolor augue et lectus.</p>
+                  </div>
+                  <div class="top-footer-right wow fadeInUp">
+                      <div class="social-media-links">
+                          <ul>
+                              <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                              <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                              <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                              <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-12 col-lg-2">
+                  <div class="links wow fadeInUp">
+                      <ul>
+                          <li class="active"><a href="#">About Us</a></li>
+                          <li><a href="#">Careers</a></li>
+                          <li><a href="#">Employer Home</a></li>
+                          <li><a href="#">Sitemap</a></li>
+                          <li><a href="#">Credits</a></li>
+                      </ul>
+                  </div>
+              </div>
+              <div class="col-12 col-lg-2">
+                  <div class="links wow fadeInUp">
+                      <ul>
+                          <li><a href="#">Help Center</a></li>
+                          <li><a href="#">Summons/Notices</a></li>
+                          <li><a href="#">Grievances</a></li>
+                          <li><a href="#">Report issues</a></li>
+                      </ul>
+                  </div>
+              </div>
+              <div class="col-12 col-lg-2">
+                  <div class="links wow fadeInUp">
+                      <ul>
+                          <li><a href="#">Privacy Policy</a></li>
+                          <li><a href="#">Terms & Conditions</a></li>
+                          <li><a href="#">Fraud alert</a></li>
+                          <li><a href="#">Trust & Safety</a></li>
+                      </ul>
+                  </div>
+              </div>
+              <div class="col-12 col-lg-2">
+                  <div class="links copyright wow fadeInUp">
+                      <ul>
+                          <li><a href="mailto:CCdoc123@gmail.com">CCdoc123@gmail.com</a></li>
+                          <li>Copyright © 2024 TalentMap, Inc.</li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+  </div>
+</footer>
+
+  <!-- Key Skills Modal -->
+  <div class="modal fade profile-popup-wrapper" id="keySkills">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <button type="button" class="close custom-close" data-dismiss="modal">&times;</button>
+        <!-- Modal body -->
+        <div class="modal-body">
+          <div class="profile-popup-wrap">
+              <div class="content">
+                <h3>Key Skills</h3>
+                <p>Add skills that best define your expertise, for e.g. Digital Marketing, Machine Learning, 
+                  Gen AI, Forecasting, etc. (Minimum 1)</p>
+              </div>
+              <div class="kiys-kills-form">
+                <form>
+                  <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Skill / Software Name*" id="skill">
+                  </div>
+                  <div class="form-group">
+                    <label for="skill-software">Tag project with employment/ educationz</label>
+                    <div class="skill-software" id="skill-software">
+                      <span class="skill">Sas</span> <span class="skill active">Python</span> <span class="skill">Tableau</span> <span class="skill">Power BI</span> <span class="skill">AWS</span> <span class="skill active">R</span> <span class="skill active">Gen AI</span> <span class="skill">Forecasting</span> <span class="skill">Predictive</span> <span class="skill">Machine Learning</span>
+                    </div>
+                  </div>
+                  <button type="button" class="btn btn-blue" data-dismiss="modal">Save</button>
+                </form>
+              </div> 
+          </div> 
+        </div>
+        
+      </div>
+  </div>
+
+  <!-- The Modal -->
+  <div class="modal fade profile-popup-wrapper" id="myModal">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <button type="button" class="close custom-close" data-dismiss="modal">&times;</button>
+        <!-- Modal body -->
+        <div class="modal-body">
+          <div class="profile-popup-wrap">
+              <div class="content">
+                <h3>Charge Rate</h3>
+                <p>A service charge, also called a service fee, refers to a fee collected to pay for services that relate to a product or service that is being purchased.</p>
+              </div> 
+              <form>
+                <div class="form-group">
+                  <div class="row">
+                    <div class="col-2 col-lg-1 align-self-center">
+                      <div class="icon"><i class="fa fa-usd" aria-hidden="true"></i></div>
+                    </div>
+                    <div class="col-7 col-lg-9 align-self-center">
+                      <div class="input-field"><input type="text" class="form-control" placeholder="Enter your detail here" id="charge"></div>
+                    </div>
+                    <div class="col-3 col-lg-2 align-self-center">
+                      <div class="label">@ Hour</div> 
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="row">
+                    <div class="col-2 col-lg-1 align-self-center">
+                      <div class="icon"><i class="fa fa-inr" aria-hidden="true"></i></div>
+                    </div>
+                    <div class="col-7 col-lg-9 align-self-center">
+                      <div class="input-field"><input type="text" class="form-control" placeholder="Enter your detail here" id="details"></div>
+                    </div>
+                    <div class="col-3 col-lg-2 align-self-center">
+                      <div class="label">@ Month</div> 
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button type="button" class="btn btn-blue" data-dismiss="modal">Save</button>
+              </form>
+          </div> 
+        </div>
+        
+      </div>
+  </div>
+  </div>
+
+<script src="js/jquery.slim.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/slick.js" type="text/javascript"></script>
+<script src="js/custom.js" type="text/javascript"></script>
+<!-- wow animation -->
+<script src="js/wow.min.js" type="text/javascript"></script>
+</body>
+</html> 
